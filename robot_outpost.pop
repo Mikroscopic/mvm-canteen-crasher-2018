@@ -1,0 +1,130 @@
+WaveSchedule
+{
+	Templates
+	{
+		T_TFBot_Medic_VaccBullet
+		{
+			Class Medic
+			Skill Expert
+			ClassIcon medic_bullet
+			Item "The Vaccinator"
+			Attributes SpawnWithFullCharge
+			Attributes VaccinatorBullets
+			ItemAttributes
+			{
+				ItemName "The Vaccinator"
+				"heal rate bonus" 1
+				"medigun bullet resist deployed" 2
+				"medigun bullet resist passive" 2
+				"medigun charge is resists" 4
+				"uber duration bonus" 200
+				"ubercharge rate bonus" 200
+			}
+			CharacterAttributes
+			{
+				"bot medic uber health threshold" 50
+			}
+		}
+		T_TFBot_Medic_VaccBlast
+		{
+			Class Medic
+			Skill Expert
+			ClassIcon medic_blast
+			Item "The Vaccinator"
+			Attributes SpawnWithFullCharge
+			Attributes VaccinatorBlast
+			ItemAttributes
+			{
+				ItemName "The Vaccinator"
+				"heal rate bonus" 1
+				"medigun blast resist deployed" 2
+				"medigun blast resist passive" 2
+				"medigun charge is resists" 4
+				"uber duration bonus" 200
+				"ubercharge rate bonus" 200
+			}
+			CharacterAttributes
+			{
+				"bot medic uber health threshold" 50
+			}
+		}
+		T_TFBot_Medic_VaccFire
+		{
+			Class Medic
+			Skill Expert
+			ClassIcon medic_fire
+			Item "The Vaccinator"
+			Attributes SpawnWithFullCharge
+			Attributes VaccinatorFire
+			ItemAttributes
+			{
+				ItemName "The Vaccinator"
+				"heal rate bonus" 1
+				"medigun fire resist deployed" 2
+				"medigun fire resist passive" 2
+				"medigun charge is resists" 4
+				"uber duration bonus" 200
+				"ubercharge rate bonus" 200
+			}
+			CharacterAttributes
+			{
+				"bot medic uber health threshold" 50
+			}
+		}
+		T_TFBot_Giant_Medic_Shield
+		{
+			Name "Giant Shield Medic"
+			Class Medic
+			Skill Expert
+			Health 4500
+			ClassIcon medic_shield_qf
+			Item "The Quick-Fix"
+			Attributes MiniBoss
+			Attributes SpawnWithFullCharge
+			Attributes ProjectileShield
+			WeaponRestrictions SecondaryOnly
+			ItemAttributes
+			{
+				ItemName "The Quick-Fix"
+				"generate rage on heal" 2
+				"heal rate bonus" 200
+				"increase buff duration" 4
+			}
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.6
+				"damage force reduction" 0.6
+				"move speed bonus" 0.5
+			}
+		}
+		T_TFBot_Giant_Huntsman_Boss
+		{
+			Name "Hunter"
+			Class Sniper
+			Skill Expert
+			Health 40000
+			Scale 1.9
+			ClassIcon sniper_bow_multi
+			Item "The Fortified Compound"
+			Item "Ol' Snaggletooth"
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			WeaponRestrictions PrimaryOnly
+			ItemAttributes
+			{
+				ItemName "The Fortified Compound"
+				"fire rate bonus" 0.6
+			}
+			CharacterAttributes
+			{
+				"airblast vertical vulnerability multiplier" 0.1
+				"airblast vulnerability multiplier" 0.3
+				"damage force reduction" 0.3
+				"health regen" 500
+				"move speed bonus" 0.4
+				"override footstep sound set" 2 //
+				"rage giving scale" 0.1
+			}
+		}
+	}
+}
