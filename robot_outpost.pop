@@ -97,12 +97,12 @@ WaveSchedule
 				"move speed bonus" 0.5
 			}
 		}
-		T_TFBot_Giant_Huntsman_Boss
+		T_TFBot_Boss_Sniper_Huntsman
 		{
-			Name "Hunter"
+			Name "Archie Archer"
 			Class Sniper
 			Skill Expert
-			Health 40000
+			Health 30000
 			Scale 1.9
 			ClassIcon sniper_bow_multi
 			Item "The Fortified Compound"
@@ -120,10 +120,56 @@ WaveSchedule
 				"airblast vertical vulnerability multiplier" 0.1
 				"airblast vulnerability multiplier" 0.3
 				"damage force reduction" 0.3
-				"health regen" 500
+				"health regen" 200
 				"move speed bonus" 0.4
-				"override footstep sound set" 2 //
+				"override footstep sound set" 2
 				"rage giving scale" 0.1
+			}
+		}
+		T_TFBot_Boss_Pyro
+		{
+			Name "Blazin' Barney"
+			Class Pyro
+			Skill Expert
+			Health 55000
+			Scale 1.9
+			ClassIcon pyro_giant
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			WeaponRestrictions PrimaryOnly
+			ItemAttributes
+			{
+				ItemName "TF_WEAPON_FLAMETHROWER"
+				"airblast pushback scale" 2.0
+				"damage bonus" 5
+			}
+			CharacterAttributes
+			{
+				"airblast vertical vulnerability multiplier" 0.1
+				"airblast vulnerability multiplier" 0.3
+				"damage force reduction" 0.3
+				"health regen" 300
+				"move speed bonus" 0.4
+				"override footstep sound set" 2
+				"rage giving scale" 0.1
+			}
+		}
+		T_TFBot_Boss_Sos_Scout
+		{
+			Name "Sunburn Sam"
+			Class Scout
+			Skill Expert
+			Health 25000
+			ClassIcon scout_sunstick
+			Item "Sun-on-a-Stick"
+			Attributes MiniBoss
+			Attributes UseBossHealthBar
+			WeaponRestrictions MeleeOnly
+			CharacterAttributes
+			{
+				"airblast vulnerability multiplier" 0.7
+				"damage force reduction" 0.7
+				"override footstep sound set" 5
 			}
 		}
 	}
